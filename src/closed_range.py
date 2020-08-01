@@ -1,7 +1,10 @@
+from dataclasses import dataclass
+
+
+@dataclass(eq=True)
 class ClosedRange:
-    def __init__(self, lower_endpoint, upper_endpoint):
-        self.lower_endpoint = lower_endpoint
-        self.upper_endpoint = upper_endpoint
+    lower_endpoint: int
+    upper_endpoint: int
 
     def notation(self):
         return f"[{self.lower_endpoint},{self.upper_endpoint}]"

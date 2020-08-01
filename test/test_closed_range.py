@@ -15,10 +15,8 @@ class TestClosedRange:
         def test_下端点3と上端点8の閉区間に5が含まれていること(self):
             assert self.cr.is_contains(5) is True
 
-
         def test_下端点3と上端点8の閉区間に2が含まれていないこと(self):
             assert self.cr.is_contains(2) is False
-
 
         def test_下端点3と上端点8の閉区間に9が含まれていないこと(self):
             assert self.cr.is_contains(9) is False
