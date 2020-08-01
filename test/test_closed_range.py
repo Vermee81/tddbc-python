@@ -30,3 +30,13 @@ class TestClosedRange(FixtureClass):
 
         def test_下端点3と上端点8の閉区間と別の下端点4と上端点10が等価でないこと(self):
             assert self.cr != ClosedRange(4, 10)
+
+        def test_下端点3と上端点8の閉区間が別の下端点4と上端点10が(self):
+            pass
+            # # TODO: どっち目線かどうか
+            # assert self.ClosedRange(3,8).is_includse(ClosedRange(4,10)) is True
+
+            # a include b
+            # include(a, b)
+
+            # TODO:どっちも入れろ。まず、書いてみる。
