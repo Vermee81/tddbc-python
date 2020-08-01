@@ -22,3 +22,6 @@ class TestClosedRange:
 
         def test_下端点3と上端点8の閉区間に9が含まれていないこと(self):
             assert self.cr.is_contains(9) is False
+
+        def test_下端点3と上端点8の閉区間と別の下端点3と上端点8が等価であること(self):
+            assert self.cr == ClosedRange(3, 8)
