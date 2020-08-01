@@ -5,3 +5,6 @@ class ClosedRange:
 
     def notation(self):
         return f"[{self.lower_endpoint},{self.upper_endpoint}]"
+
+    def is_contains(self, num: int) -> bool:
+        return self.lower_endpoint <= num <= self.upper_endpoint
