@@ -23,3 +23,6 @@ class TestClosedRange:
 
         def test_下端点3と上端点8の閉区間と別の下端点3と上端点8が等価であること(self):
             assert self.cr == ClosedRange(3, 8)
+
+        def test_下端点3と上端点8の閉区間と別の下端点4と上端点10が等価でないこと(self):
+            assert self.cr != ClosedRange(4, 10)
